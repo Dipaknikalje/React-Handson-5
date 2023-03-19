@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Comp2 from './Components/Comp2'
+import Comp from './Components/Comp'
+import PureComp from './Components/PureComp';
 function App() {
-  return (
+  return (<>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+      <h2>Example of Higher Order Function</h2>
+      {/* <Comp1/> */}
+      <Comp2 data={Comp}/>     
+      </div>
+      <hr/>
+      <div>
+        <h2>Example of Pure Component</h2>
+        <PureComp/>
+      </div>
+      </div>
+      </>
+      
   );
 }
 
